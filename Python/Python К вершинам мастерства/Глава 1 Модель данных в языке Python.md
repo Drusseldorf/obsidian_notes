@@ -42,25 +42,25 @@ __len__ и __getitem__
 
 Для начала, теперь мы можем получить размер колоды просто применив стандартную функцию len к объекту нашей колоды:
 
-![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python%20eeace154c02445d68ebd760fc5c451a5/image.png)
+![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python/image.png)
 
 Как получить карту из колоды? Да просто через синтаксис *[ ]*
 
 Например, получим 8-ую карту нашей колоды:
 
-![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python%20eeace154c02445d68ebd760fc5c451a5/image%201.png)
+![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python/image%201.png)
 
 Аналогично, работают все виды срезов, например, получим первые три карты:
 
-![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python%20eeace154c02445d68ebd760fc5c451a5/image%202.png)
+![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python/image%202.png)
 
 А что если мы хотим получить случайную карту из колоды? Опять же, используем стандартные средства пайтона - random библиотеку
 
-![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python%20eeace154c02445d68ebd760fc5c451a5/image%203.png)
+![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python/image%203.png)
 
 Доступно так же и итерирование по нашей колоде
 
-![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python%20eeace154c02445d68ebd760fc5c451a5/image%204.png)
+![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python/image%204.png)
 
 Итерирование часто подразумевается неявно. Если в коллекции отсутствует метод __contains__, то оператор in производит последовательный просмотр.
 
@@ -80,15 +80,15 @@ __len__ и __getitem__
 
 Метод __repr__ вызывается встроенной функцией repr() для получения строкового представления объекта. Если его не реализовывать, то мы получаем строку вида:
 
-![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python%20eeace154c02445d68ebd760fc5c451a5/image%205.png)
+![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python/image%205.png)
 
 А если реализовать repr:
 
-![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python%20eeace154c02445d68ebd760fc5c451a5/image%206.png)
+![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python/image%206.png)
 
 То получим уже:
 
-![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python%20eeace154c02445d68ebd760fc5c451a5/image%207.png)
+![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python/image%207.png)
 
 В отличии от __repr__, метод __str__ вызывается str() и предназначен для отображения пользователя как бы хуман френдли представление об объекте. А вот __repr__ же должен давать точное, однозначное представление об объекте.
 
@@ -100,21 +100,22 @@ __len__ и __getitem__
 
 Вот конструктор:
 
-![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python%20eeace154c02445d68ebd760fc5c451a5/image%208.png)
+![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python/image%208.png)
 
 А вот репр:
 
-![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python%20eeace154c02445d68ebd760fc5c451a5/image%209.png)
+![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python/image%209.png)
 
 Тогда eval - создаст новый объект:
 
-![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python%20eeace154c02445d68ebd760fc5c451a5/image%2010.png)
+![image.png](%D0%93%D0%BB%D0%B0%D0%B2%D0%B0%201%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5%20Python/image%2010.png)
 
 цель `__repr__`— быть однозначным, а цель `__str__` — читабельным
 
->>> import datetime
+```python
+import datetime
 
-Отличный пример для наглядности – **datetime**:
+# Отличный пример для наглядности – **datetime**:
 
 >>> dt = datetime.datetime(2019, 7, 27)
 
@@ -128,9 +129,12 @@ __len__ и __getitem__
 
 >>> eval(repr(dt)) == dt
 
-**True**
+True
+```
 
 **str** от **datetime** просто покажет нам дату и время в удобном формате; **repr** от **datetime** вернет строку, в которой будет вызов описан конструктора конкретно этого объекта, да так, что при исполнении этой строки как кода на Python функцией **eval** – мы получим объект **datetime** для той же даты
+
+eval - позволяет выполнять пайтон код, читая его как строку
 
 !r - Флаг **!r** вызывает **repr(x) (условно говоря, чтобы числа оставались числами, а не становились строками в выводе репра, сырой формат (r - raw))**
 

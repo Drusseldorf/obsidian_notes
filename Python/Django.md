@@ -1,3 +1,0 @@
-# Django
-
-[Основы](Django%201501dd2d7a1e8038bce7e29e8011136f/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%201511dd2d7a1e8095a821e0cf2ea43bcd.md)
