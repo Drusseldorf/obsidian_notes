@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "8b1d322b-5f58-4007-9c3e-058472ee790c",
+		"name": "Test task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10940445"
+	},
+	"item": [
+		{
+			"name": "Создание заказа",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "returnUrl",
+							"value": "https://example.com",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "1000000",
+							"type": "text"
+						},
+						{
+							"key": "orderNumber",
+							"value": "123123123",
+							"type": "text"
+						},
+						{
+							"key": "userName",
+							"value": "andkorole-1-api",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "qgncz-J3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://3dsec.berekebank.kz/payment/rest/register.do",
+					"protocol": "https",
+					"host": [
+						"3dsec",
+						"berekebank",
+						"kz"
+					],
+					"path": [
+						"payment",
+						"rest",
+						"register.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение статуса заказа",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "andkorole-1-api",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "qgncz-J3",
+							"type": "text"
+						},
+						{
+							"key": "orderId",
+							"value": "718058b4-93e2-7a80-a897-7b2400d8acc1",
+							"type": "text"
+						},
+						{
+							"key": "orderNumber",
+							"value": "123123123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://3dsec.berekebank.kz/payment/rest/getOrderStatusExtended.do",
+					"protocol": "https",
+					"host": [
+						"3dsec",
+						"berekebank",
+						"kz"
+					],
+					"path": [
+						"payment",
+						"rest",
+						"getOrderStatusExtended.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Регистрация заказа с предавторизацией",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "mvoouigrp3kk6f6dt4ttr8krn7",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "amount",
+							"value": "200000",
+							"type": "text"
+						},
+						{
+							"key": "returnUrl",
+							"value": "https://example.com",
+							"type": "text"
+						},
+						{
+							"key": "orderNumber",
+							"value": "123123123",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "mvoouigrp3kk6f6dt4ttr8krn7",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://3dsec.berekebank.kz/payment/rest/registerPreAuth.do",
+					"protocol": "https",
+					"host": [
+						"3dsec",
+						"berekebank",
+						"kz"
+					],
+					"path": [
+						"payment",
+						"rest",
+						"registerPreAuth.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Завершение заказа с предавторизацией",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "amount",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "orderId",
+							"value": "fa9e7524-096c-73fd-a972-3e8a00d8acc1",
+							"type": "text"
+						},
+						{
+							"key": "userName",
+							"value": "andkorole-1-api",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "qgncz-J3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://3dsec.berekebank.kz/payment/rest/deposit.do",
+					"protocol": "https",
+					"host": [
+						"3dsec",
+						"berekebank",
+						"kz"
+					],
+					"path": [
+						"payment",
+						"rest",
+						"deposit.do"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
